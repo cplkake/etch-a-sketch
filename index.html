@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <p id="header-title">Etch-a-sketch</p>
-    </div>
+    <div class="header">Etch-a-sketch</div>
     <div class="content">
         <div id="sidebar-container">
             <div id="sidebar">
-                <input type="color" id="colourSelection">
+                <input type="color" id="colourSelection" value="#ffc659">
                 <button id="blackSelection" onclick="changeToBlack()">Black</button>
                 <button id="clear-button" onclick="clearSketch()">Clear</button>
                 <div class="resolution-container">
@@ -21,14 +19,23 @@
                         <p id="resolution-display-header">Resolution</p>
                         <p id="resolution-display-value"></p>
                     </div>
-                    <button id="increase-resolution" onclick="increaseResolution()">Increase</button>
-                    <button id="decrease-resolution" onclick="decreaseResolution()">Decrease</button>
+                    <div id="adjust-resolution-container">
+                        <button id="decrease-resolution" onclick="decreaseResolution()">
+                            <i class="arrow decrease"></i>
+                        </button>
+                        <button id="increase-resolution" onclick="increaseResolution()">
+                            <i class="arrow increase"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="sketch-container"></div>
     </div>
-    <div class="footer">
+    <div id="footer">
+        <a href="https://github.com/cplkake">
+            <img src="./images/GitHub-Mark-Light-32px.png">
+        </a>
         <p>cplkake</p>
     </div>
     <script src="script.js"></script>
