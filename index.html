@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <p id="header-title">Etch-a-sketch</p>
+    </div>
+    <div class="content">
+        <div id="sidebar-container">
+            <div id="sidebar">
+                <input type="color" id="colourSelection">
+                <button id="blackSelection" onclick="changeToBlack()">Black</button>
+                <button id="clear-button" onclick="clearSketch()">Clear</button>
+                <div class="resolution-container">
+                    <div id="resolution-display">
+                        <p id="resolution-display-header">Resolution</p>
+                        <p id="resolution-display-value"></p>
+                    </div>
+                    <button id="increase-resolution" onclick="increaseResolution()">Increase</button>
+                    <button id="decrease-resolution" onclick="decreaseResolution()">Decrease</button>
+                </div>
+            </div>
+        </div>
+        <div id="sketch-container"></div>
+    </div>
+    <div class="footer">
+        <p>cplkake</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

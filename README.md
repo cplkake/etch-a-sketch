@@ -1,0 +1,1 @@
+the purpose of this project is to improve and flex my DOM manipulation skills
